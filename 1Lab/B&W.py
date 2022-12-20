@@ -1,6 +1,6 @@
 from PIL import Image
 import numpy as np
-sample = np.array(Image.open('/home/onkelzeddy/Workspace/ImageProcessing/37df66ec6110e0cf7dffe0a9799ee7bf.jpg').convert('RGB'))
+sample = np.array(Image.open('/home/onkelzeddy/Workspace/ImageProcessing/image.jpg').convert('RGB'))
 print(len(sample[0][0]))
 maxColorNumber = 0
 
@@ -15,4 +15,4 @@ for i in range (len(sample)):
 
 
 newImage = Image.fromarray(sample,'RGB')
-newImage.save('/home/onkelzeddy/Workspace/ImageProcessing/newImage.jpg')
+newImage.save('/home/onkelzeddy/Workspace/ImageProcessing/forPSNR_SSIM.jpg')
